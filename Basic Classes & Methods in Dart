@@ -16,7 +16,7 @@ void main() {
   
 //   s1.publish();
   
-  Person p1 = Person('Max', 20);
+  Person p1 = Person(name: 'Max',age: 20);
   print(p1.name);
   print(p1.age);
   
@@ -26,9 +26,9 @@ class Person {
   String name;
   int age;
   
-  Person(String name, int age) {
-    this.name = name;
-    this.age = age;
+  Person({this.name, this.age}) {
+//     this.name = name;
+//     this.age = age;
   }
   
 }
