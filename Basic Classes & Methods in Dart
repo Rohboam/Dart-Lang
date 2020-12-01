@@ -1,0 +1,60 @@
+void main() {
+  
+//   User u1 = new User('Ali', 25);
+  
+//   print(u1.user_name);
+  
+//   u1.Login();
+  
+//   User u2 = new User('Ben', 30);
+  
+//   print(u2.user_name);
+  
+//   SuperUser s1 = new SuperUser('Alice', 23);
+  
+//   print(s1.user_name);
+  
+//   s1.publish();
+  
+  Person p1 = Person('Max', 20);
+  print(p1.name);
+  print(p1.age);
+  
+}
+
+class Person {
+  String name;
+  int age;
+  
+  Person(String name, int age) {
+    this.name = name;
+    this.age = age;
+  }
+  
+}
+
+class User{
+  
+  String user_name;
+  int age;
+  
+  User(String username, int age){
+    this.user_name = username;
+    this.age = age;
+  }
+  
+  void Login(){
+    print('Login');
+  }
+  
+}
+
+class SuperUser extends User{
+  
+  SuperUser(String username, int age) : super(username, age);
+  
+  void publish(){
+    print('publish');
+  }
+}
+
